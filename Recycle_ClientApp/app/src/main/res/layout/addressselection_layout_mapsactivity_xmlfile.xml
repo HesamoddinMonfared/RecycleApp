@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_Background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:id="@+id/addressSelection_layout_mapsActivity_addressName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:padding="4dp"
+            android:maxLines="1"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:background="@drawable/edittext_background_xmlfile"
+            android:textColor="@color/dim_gray"
+            style="@style/RegularIranSans"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="عنوان آدرس"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/dim_gray"
+            style="@style/RegularIranSans"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:id="@+id/addressSelection_layout_mapsActivity_addressDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:padding="4dp"
+            android:ems="10"
+            android:maxLines="1"
+            android:maxLength="50"
+            android:singleLine="true"
+            android:background="@drawable/edittext_background_xmlfile"
+            android:textColor="@color/dim_gray"
+            style="@style/RegularIranSans"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="جزییات آدرس"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/dim_gray"
+            style="@style/RegularIranSans"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/addressSelection_layout_mapsActivity_button_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="ثبت آدرس"
+        android:background="@drawable/button_one_list"
+        android:textColor="@color/white"
+        style="@style/RegularIranSans"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <org.neshan.ui.MapView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/map"/>
+
+        <Button
+            android:id="@+id/user_location_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="مختصات فعلی کاربر"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button_one_list"
+            android:textColor="@color/white"
+            style="@style/RegularIranSans"/>
+    </RelativeLayout>
+
+</LinearLayout>

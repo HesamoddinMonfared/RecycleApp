@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/requestsPayment_layout_listView_layout_main"
+    android:background="@drawable/listview_row_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/requestsPayment_layout_listView_textView_requestDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تاریخ درخواست"
+            android:layout_alignParentRight="true"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            style="@style/RegularIranSans"/>
+
+        <TextView
+            android:id="@+id/requestsPayment_layout_listView_textView_requestStatusInTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="وضعیت درخواست"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            style="@style/RegularIranSans"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/requestsPayment_layout_listView_layout_detail"
+        android:tag="requestsPayment_layout_listView_layout_detail_tag"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="جزییات درخواست"
+            android:textColor="@color/dim_gray"
+            style="@style/LightIranSans"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_background_xmlfile"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/requestsPayment_layout_listView_textView_requestPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="امتیاز درخواستی"
+                android:textStyle="bold"
+                android:textColor="@color/dim_gray"
+                style="@style/LightIranSans"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_background_xmlfile"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/requestsPayment_layout_listView_textView_requestToman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="مبلغ درخواستی"
+                android:textStyle="bold"
+                android:textColor="@color/dim_gray"
+                style="@style/LightIranSans"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_background_xmlfile"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/requestPayment_layout_textView_shebaNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:text="شماره شبا"
+                android:textColor="@color/dim_gray"
+                style="@style/LightIranSans"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_background_xmlfile"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/requestPayment_layout_textView_accountOwner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:text="مشخصات صاحب حساب"
+                android:textColor="@color/dim_gray"
+                style="@style/LightIranSans"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_background_xmlfile"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/requestPayment_layout_textView_bankName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:text="اسم بانک"
+                android:textColor="@color/dim_gray"
+                style="@style/LightIranSans"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_background_xmlfile"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/requestPayment_layout_textView_bankResponse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:text="پاسخ بانک"
+                android:textColor="@color/dim_gray"
+                style="@style/LightIranSans"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_background_xmlfile"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/requestsPayment_layout_listView_textView_adminMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="پیام مدیر مالی"
+                android:textStyle="bold"
+                android:textColor="@color/dim_gray"
+                style="@style/LightIranSans"/>
+        </RelativeLayout>
+        <!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:text="وضعیت درخواست"
+            android:textColor="@color/dim_gray"
+            style="@style/LightIranSans"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_background_xmlfile"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/requestPayment_layout_textView_requestStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:ems="10"
+                android:text="نامشخص"
+                android:textColor="@color/black"
+                style="@style/LightIranSans"/>
+        </RelativeLayout>
+        -->
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GarbageSelection.AddressSelection.AddressSelectionActivity"
+    android:orientation="vertical"
+    android:background="@color/base_Background">
+
+    <LinearLayout
+        android:id="@+id/addressSelection_layout_mainLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/addressSelection_layout_button_newAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ثبت آدرس جدید"
+            android:background="@drawable/button_one_list"
+            android:textColor="@color/white"
+            style="@style/RegularIranSans"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginTop="20dp"
+            android:text="آدرس های ذخیره شده"
+            android:textColor="@color/dim_gray"
+            style="@style/RegularIranSans"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/addressSelection_layout_listView"
+        android:layout_below="@+id/addressSelection_layout_mainLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="50dp">
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/addressSelection_layout_button_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ادامه"
+            android:background="@drawable/gradient_list"
+            android:textColor="@color/white"
+            style="@style/RegularIranSans"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

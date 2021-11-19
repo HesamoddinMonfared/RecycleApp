@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_garbageSelection">
+
+    <fragment
+        android:id="@+id/nav_garbageSelection"
+        android:name="ir.tafkik_co.Recycle_ClientApp.GarbageSelection.GarbageSelection_Fragment"
+        android:label="مدیریت پسماند"
+        tools:layout="@layout/garbageselection_layout_fragment_xmlfile" />
+
+    <fragment
+        android:id="@+id/nav_myscores"
+        android:name="ir.tafkik_co.Recycle_ClientApp.MyScores.MyScores_Fragment"
+        android:label="امتیاز من"
+        tools:layout="@layout/myscores_layout_fragment_xmlfile" />
+
+    <fragment
+        android:id="@+id/nav_userInformation"
+        android:name="ir.tafkik_co.Recycle_ClientApp.UserInformation.UserInformation_Fragment"
+        android:label="اطلاعات کاربری"
+        tools:layout="@layout/userinformation_layout_fragment_xmlfile" />
+
+    <fragment
+        android:id="@+id/nav_requestsReport"
+        android:name="ir.tafkik_co.Recycle_ClientApp.RequestsReport.RequestsReport_Fragment"
+        android:label="گزارش درخواست ها"
+        tools:layout="@layout/requestsreport_layout_fragment_xmlfile" />
+
+    <fragment
+        android:id="@+id/nav_requestsPayment"
+        android:name="ir.tafkik_co.Recycle_ClientApp.RequestsPayment.RequestsPayment_Fragment"
+        android:label="گزارش پرداخت ها"
+        tools:layout="@layout/requestspayment_layout_fragment_xmlfile" />
+
+    <fragment
+        android:id="@+id/nav_contactSupport"
+        android:name="ir.tafkik_co.Recycle_ClientApp.ContactSupport.ContactSupport_Fragment"
+        android:label="تماس با پشتیبانی"
+        tools:layout="@layout/contactsupport_layout_fragment_xmlfile" />
+
+    <fragment
+        android:id="@+id/nav_introducingUs"
+        android:name="ir.tafkik_co.Recycle_ClientApp.IntroducingUs.IntroducingUs_Fragment"
+        android:label="معرفی ما به دوستان"
+        tools:layout="@layout/introducingus_layout_fragment_xmlfile"
+        android:tag="hhh"/>
+
+    <fragment
+        android:id="@+id/nav_about_us"
+        android:name="ir.tafkik_co.Recycle_ClientApp.AboutUs.AboutUs_Fragment"
+        android:label="@string/menu_aboutUs"
+        tools:layout="@layout/aboutus_layout_fragment_xmlfile" />
+
+    <fragment
+    android:id="@+id/nav_logoutApp"
+    android:name="ir.tafkik_co.Recycle_ClientApp.LogoutApp.LogoutApp_Fragment"
+    android:label="خروج از حساب"
+    tools:layout="@layout/logoutapp_layout_fragment_xmlfile" />
+
+    <fragment
+        android:id="@+id/nav_exitApp"
+        android:name="ir.tafkik_co.Recycle_ClientApp.ExitApp.ExitApp_Fragment"
+        android:label="خروج از برنامه"
+        tools:layout="@layout/exitapp_layout_fragment_xmlfile" />
+
+</navigation>

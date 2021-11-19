@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/dateSelection_layout_listView_layout_main"
+    android:background="@drawable/listview_row_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/dateSelection_layout_listView_textView_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="روز"
+            android:textColor="@color/white"
+            style="@style/RegularIranSans"/>
+
+        <TextView
+            android:id="@+id/dateSelection_layout_listView_textView_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="تاریخ"
+            android:textColor="@color/white"
+            style="@style/RegularIranSans"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateSelection_layout_listView_layout_detail"
+        android:tag="dateSelection_layout_listView_layout_detail_tag"
+        android:orientation="vertical"
+        android:layoutDirection="rtl"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <RadioGroup
+            android:id="@+id/dateSelection_layout_RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right">
+
+            <RadioButton
+                android:id="@+id/dateSelection_layout_RadioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="ساعت 8 تا 12"
+                android:checked="false"
+                android:background="@drawable/radiobutton1_xmlfile"
+                android:textColor="@color/white"
+                style="@style/RegularIranSans"/>
+
+            <RadioButton
+                android:id="@+id/dateSelection_layout_RadioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="ساعت 12 تا 16"
+                android:checked="false"
+                android:background="@drawable/radiobutton1_xmlfile"
+                android:textColor="@color/white"
+                style="@style/RegularIranSans"/>
+
+            <RadioButton
+                android:id="@+id/dateSelection_layout_RadioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="ساعت 16 تا 20"
+                android:checked="false"
+                android:background="@drawable/radiobutton1_xmlfile"
+                android:textColor="@color/white"
+                style="@style/RegularIranSans"/>
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

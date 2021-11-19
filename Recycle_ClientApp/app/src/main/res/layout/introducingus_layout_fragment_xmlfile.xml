@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/base_Background"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text=" با معرفی اپلیکیشن «تفکیک» به دوستان خود در گسترش فرهنگ تفکیک و بازیافت پسماند یاری گر ما باشید"
+            android:textColor="@color/dim_gray"
+            style="@style/RegularIranSans"/>
+
+        <!--
+        <TextView
+            android:id="@+id/introducingus_layout_textView_introductionCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:ems="20"
+            android:gravity="center"
+            android:background="@drawable/button_one_list"
+            android:text="کد معرفی: 546213"
+            android:textColor="@color/white"
+            style="@style/RegularIranSans"/>
+            -->
+
+        <ImageView
+            android:id="@+id/introducingus_layout_imageView_share"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:paddingTop="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/image_shareapp"/>
+    </LinearLayout>
+</ScrollView>

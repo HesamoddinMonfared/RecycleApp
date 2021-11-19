@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/garbageSelection_layout_recyclerView_linearLayout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@drawable/recycler_item_background_ball2_xmlfile"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <!--
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_glassgarbage">
+        </androidx.appcompat.widget.AppCompatImageView>
+        -->
+        <TextView
+            android:id="@+id/garbageSelection_layout_recyclerView_textView_garbageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Garbage Name"
+            android:ems="6"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            style="@style/RegularIranSans"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/garbageSelection_layout_recyclerView_button_help"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center|right"
+        android:background="@drawable/ic_recycler_help_list" />
+
+</LinearLayout>

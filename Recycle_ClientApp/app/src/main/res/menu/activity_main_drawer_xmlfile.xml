@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_garbageSelection"
+        android:icon="@drawable/ic_menu_garbagemanage_xmlfile"
+        android:title="مدیریت پسماند"/>
+    <item
+        android:id="@+id/nav_myscores"
+        android:icon="@drawable/ic_menu_score_xmlfile"
+        android:title="امتیاز من" />
+    <item
+        android:id="@+id/nav_userInformation"
+        android:icon="@drawable/ic_menu_userinfo_xmlfile"
+        android:title="اطلاعات کاربری" />
+    <item
+        android:id="@+id/nav_requestsReport"
+        android:icon="@drawable/ic_menu_requestreport_xmlfile"
+        android:title="گزارش درخواست ها" />
+    <item
+        android:id="@+id/nav_requestsPayment"
+        android:icon="@drawable/ic_menu_requestpayment_xmlfile"
+        android:title="گزارش پرداخت ها" />
+    <item
+        android:id="@+id/nav_contactSupport"
+        android:icon="@drawable/ic_menu_contactsupport_xmlfile"
+        android:title="تماس با پشتیبانی" />
+    <item
+        android:id="@+id/nav_introducingUs"
+        android:icon="@drawable/ic_menu_share_xmlfile"
+        android:title="معرفی ما به دوستان" />
+    <item
+        android:id="@+id/nav_about_us"
+        android:icon="@drawable/ic_menu_aboutus_xmlfile"
+        android:title="@string/menu_aboutUs" />
+    <item
+        android:id="@+id/nav_logoutApp"
+        android:icon="@drawable/ic_menu_logout_xmlfile"
+        android:title="خروج از حساب" />
+
+    <item
+        android:id="@+id/nav_exitApp"
+        android:icon="@drawable/ic_menu_exitapp_xmlfile"
+        android:title="خروج از برنامه" />
+
+</menu>

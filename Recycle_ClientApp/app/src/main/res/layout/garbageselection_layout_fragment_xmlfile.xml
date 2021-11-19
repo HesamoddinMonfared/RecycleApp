@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:text="تعیین نوع و مقدار پسماند"
+            android:textColor="@color/dim_gray"
+            style="@style/RegularIranSans"/>
+
+        <RelativeLayout
+            android:id="@+id/garbageSelection_layout_recyclerViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/garbageSelection_layout_button_recyclerNavLeft"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="70dp"
+                    android:background="@drawable/ic_navigate_before_list"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/garbageSelection_layout_recyclerView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"/>
+
+                <Button
+                    android:id="@+id/garbageSelection_layout_button_recyclerNavRight"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="70dp"
+                    android:clickable="true"
+                    android:background="@drawable/ic_navigate_next_list"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/garbageSelection_layout_textView_determineGarbageNote"
+            android:layout_below="@id/garbageSelection_layout_recyclerViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="نوع و میزان تقریبی پسماند را تعیین کنید. \n\n این برنامه فعلا در شهر گرگان (استان گلستان) فعال می باشد."
+            android:textColor="@color/dim_gray"
+            style="@style/RegularIranSans"/>
+
+        <ListView
+            android:id = "@+id/garbageSelection_layout_listView"
+            android:layout_below="@id/garbageSelection_layout_recyclerViewContainer"
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="50dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+                <Button
+                    android:id="@+id/garbageSelection_layout_button_continue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ادامه"
+                    android:background="@drawable/gradient_list"
+                    android:textColor="@color/white"
+                    style="@style/RegularIranSans"/>
+        </LinearLayout>
+
+</RelativeLayout >

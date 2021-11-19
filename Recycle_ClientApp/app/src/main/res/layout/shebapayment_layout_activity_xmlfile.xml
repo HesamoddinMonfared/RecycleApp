@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/base_Background">
+
+    <ScrollView
+        android:id="@+id/userinformation_layout_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/shebapayment_layout_textView_accountBalance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="امتیاز شما: 0 واحد معادل 0 تومان می باشد"
+                android:background="@drawable/edittext_background_xmlfile"
+                android:ems="5"
+                android:textColor="@color/dim_gray"
+                style="@style/RegularIranSans"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:text="امتیاز درخواستی:"
+                android:textColor="@color/dim_gray"
+                style="@style/RegularIranSans"/>
+
+            <EditText
+                android:id="@+id/shebapayment_layout_editText_requestPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="4dp"
+                android:layout_margin="10dp"
+                android:maxLines="1"
+                android:maxLength="50"
+                android:inputType="number"
+                android:ems="15"
+                android:singleLine="true"
+                android:background="@drawable/edittext_background_xmlfile"
+                android:textColor="@color/dim_gray"
+                style="@style/RegularIranSans"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:text="مبلغ درخواستی:"
+                android:textColor="@color/dim_gray"
+                style="@style/RegularIranSans"/>
+
+            <TextView
+                android:id="@+id/shebapayment_layout_textView_requestToman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:text="0 تومان"
+                android:textColor="@color/dim_gray"
+                style="@style/RegularIranSans"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="اطلاعات حساب بانکی"
+                android:ems="5"
+                android:textColor="@color/dim_gray"
+                style="@style/RegularIranSans"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:text="شماره شبا بدون IR"
+                android:textColor="@color/dim_gray"
+                style="@style/RegularIranSans"/>
+
+            <EditText
+                android:id="@+id/shebapayment_layout_textView_shebaNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="4dp"
+                android:layout_margin="10dp"
+                android:maxLines="1"
+                android:maxLength="24"
+                android:inputType="number"
+                android:ems="15"
+                android:singleLine="true"
+                android:background="@drawable/edittext_background_xmlfile"
+                android:textColor="@color/dim_gray"
+                style="@style/RegularIranSans"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:text="نام صاحب حساب"
+                android:textColor="@color/dim_gray"
+                style="@style/RegularIranSans"/>
+
+            <EditText
+                android:id="@+id/shebapayment_layout_textView_accountOwner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="4dp"
+                android:layout_margin="10dp"
+                android:maxLines="1"
+                android:maxLength="100"
+                android:ems="15"
+                android:singleLine="true"
+                android:background="@drawable/edittext_background_xmlfile"
+                android:textColor="@color/dim_gray"
+                style="@style/RegularIranSans"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:text="نام بانک"
+                android:textColor="@color/dim_gray"
+                style="@style/RegularIranSans"/>
+
+            <EditText
+                android:id="@+id/shebapayment_layout_textView_bankName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="4dp"
+                android:layout_margin="10dp"
+                android:maxLines="1"
+                android:maxLength="50"
+                android:ems="15"
+                android:singleLine="true"
+                android:background="@drawable/edittext_background_xmlfile"
+                android:textColor="@color/dim_gray"
+                style="@style/RegularIranSans"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/shebapayment_layout_button_submit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="ثبت درخواست"
+            android:background="@drawable/button_one_list"
+            android:textColor="@color/white"
+            style="@style/RegularIranSans"/>
+    </LinearLayout>
+
+</RelativeLayout>

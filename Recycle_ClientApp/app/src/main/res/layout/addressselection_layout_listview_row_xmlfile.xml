@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/addressSelection_layout_listView_layout_main"
+    android:background="@drawable/listview_row_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/addressSelection_layout_listView_textView_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="کلیات"
+            android:textColor="@color/white"
+            style="@style/RegularIranSans"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/addressSelection_layout_listView_layout_detail"
+        android:tag="addressSelection_layout_listView_layout_detail_tag"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <TextView
+                android:id="@+id/addressSelection_layout_listView_textView_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_alignParentRight="true"
+                android:text="جزییات آدرس"
+                android:textColor="@color/white"
+                style="@style/RegularIranSans"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_alignParentLeft="true">
+                <Button
+                    android:id="@+id/addressSelection_layout_listView_button_edit"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/ic_edit_list"
+                    android:textColor="@color/white"
+                    style="@style/RegularIranSans"/>
+                <Button
+                    android:id="@+id/addressSelection_layout_listView_button_delete"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_delete_list"
+                    android:textColor="@color/white"
+                    style="@style/RegularIranSans"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

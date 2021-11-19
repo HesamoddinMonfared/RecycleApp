@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/requestsReport_layout_listView_layout_main"
+    android:background="@drawable/listview_row_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/requestsReport_layout_listView_textView_requestDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تاریخ درخواست"
+            android:textSize="12dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            style="@style/RegularIranSans"/>
+
+        <TextView
+            android:id="@+id/requestsReport_layout_listView_textView_requestStatusInTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="وضعیت درخواست"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            style="@style/RegularIranSans"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/requestsReport_layout_listView_layout_detail"
+        android:tag="requestsReport_layout_listView_layout_detail_tag"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <RelativeLayout
+            android:id="@+id/requestsReport_layout_listView_relativeLayout_confirmDriverReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/requestsReport_layout_listView_button_acceptDriverReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:backgroundTint="@color/_light_green"
+                android:text="تایید نظر مسئول جمع آوری"
+                android:textStyle="bold"
+                android:textColor="@color/dim_gray"
+                style="@style/LightIranSans"/>
+            <Button
+                android:id="@+id/requestsReport_layout_listView_button_rejectDriverReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:backgroundTint="@color/orange_red"
+                android:text="عدم تایید نظر مسئول جمع آوری"
+                android:textStyle="bold"
+                android:textColor="@color/dim_gray"
+                style="@style/LightIranSans"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="جزییات درخواست"
+            android:textStyle="bold"
+            android:textColor="@color/dim_gray"
+            style="@style/LightIranSans"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_background_xmlfile"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/requestsReport_layout_listView_textView_requestDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text=" پلاستیک \n  نان خشک"
+                android:textColor="@color/dim_gray"
+                style="@style/LightIranSans"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_background_xmlfile"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/requestReport_layout_textView_selectedAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="آمل - خیابان امام رضا"
+                android:textColor="@color/dim_gray"
+                style="@style/LightIranSans"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_background_xmlfile"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/requestReport_layout_textView_selectedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="3-5-1398"
+                android:textColor="@color/dim_gray"
+                style="@style/LightIranSans"/>
+        </RelativeLayout>
+
+        <!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:text="وضعیت درخواست"
+            android:textColor="@color/dim_gray"
+            style="@style/LightIranSans"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_background_xmlfile"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/requestReport_layout_textView_requestStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:ems="10"
+                android:text="ثبت اولیه"
+                android:textColor="@color/black"
+                style="@style/LightIranSans"/>
+        </RelativeLayout>
+        -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:text="مشخصات مسئول جمع آوری "
+            android:textStyle="bold"
+            android:textColor="@color/dim_gray"
+            style="@style/LightIranSans"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_background_xmlfile"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/requestReport_layout_textView_driverName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="علی احمدی"
+                android:textColor="@color/dim_gray"
+                style="@style/LightIranSans"/>
+
+            <ImageView
+                android:id="@+id/requestReport_layout_imageView_driverPhoto"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/empty_driver"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_background_xmlfile"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/requestReport_layout_textView_carDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="پیکان وانت"
+                android:textColor="@color/dim_gray"
+                style="@style/LightIranSans"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:text="نظر مسئول جمع آوری"
+            android:textStyle="bold"
+            android:textColor="@color/dim_gray"
+            style="@style/LightIranSans"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_background_xmlfile"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/requestReport_layout_textView_driverReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="نظری ثبت نشده است."
+                android:textColor="@color/dim_gray"
+                style="@style/LightIranSans"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_background_xmlfile"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/requestReport_layout_textView_driverScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="امتیاز مسئول جمع آوری: نامشخص"
+                android:textColor="@color/dim_gray"
+                style="@style/LightIranSans"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:text="توضیحات برای کاربر"
+            android:textStyle="bold"
+            android:textColor="@color/dim_gray"
+            style="@style/LightIranSans"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_background_xmlfile"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/requestReport_layout_textView_storeKeeperReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="نظری ثبت نشده است."
+                android:textStyle="bold"
+                android:textColor="@color/dim_gray"
+                style="@style/RegularIranSans"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_background_xmlfile"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/requestReport_layout_textView_storeKeeperScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="امتیاز مسئول انبار: نامشخص"
+                android:textColor="@color/dim_gray"
+                style="@style/LightIranSans"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/requestsReport_layout_listView_button_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="لغو درخواست"
+            android:background="@drawable/button_one_list"
+            android:textColor="@color/white"
+            style="@style/RegularIranSans"/>
+
+        <Button
+            android:id="@+id/requestsReport_layout_listView_button_rateToDriver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="به راننده امتیاز دهید"
+            android:background="@drawable/button_one_list"
+            android:textColor="@color/white"
+            style="@style/RegularIranSans"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ir.tafkik_co.Recycle_ClientApp">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name="ir.tafkik_co.Recycle_ClientApp.DataHolderClass"
+        android:allowBackup="true"
+        android:icon="@drawable/image_test_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/image_test_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="ir.tafkik_co.Recycle_ClientApp.RateToDriver.RateToDriverActivity"></activity>
+        <activity
+            android:name="ir.tafkik_co.Recycle_ClientApp.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ir.tafkik_co.Recycle_ClientApp.LoginApp.LoginAppConfirmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ir.tafkik_co.Recycle_ClientApp.LoginApp.LoginAppActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ir.tafkik_co.Recycle_ClientApp.GarbageSelection.FinalStep.FinalStepActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ir.tafkik_co.Recycle_ClientApp.GarbageSelection.AddressSelection.AddressSelectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ir.tafkik_co.Recycle_ClientApp.GarbageSelection.DateSelection.DateSelectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ir.tafkik_co.Recycle_ClientApp.MyScores.ShebaPayment.ShebaPaymentActivity"
+            android:screenOrientation="portrait" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api_xmlfile.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="ir.tafkik_co.Recycle_ClientApp.GarbageSelection.AddressSelection.AddressSelection_MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="ir.tafkik_co.Recycle_ClientApp.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
